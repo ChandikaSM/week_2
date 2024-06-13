@@ -1,23 +1,15 @@
-// import { Component, NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import { Router, RouterModule, Routes } from '@angular/router';
-// import { HomePageComponent } from './home-page.component';
-
-// export const routes: Routes = [
-//   {path: '', component: HomePageComponent},
-// ];
-
-// @NgModule({
-//   declarations: [HomePageComponent],
-//   imports: [CommonModule, RouterModule.forChild(routes)],
-// })
-// export class HomePageModule {}
 import { NgModule } from '@angular/core';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './home-page.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
-@NgModule ({
-  imports: [
-    MatSlideToggleModule,
-  ]
+
+export const routes: Routes = [{ path: '', component: HomePageComponent }];
+
+@NgModule({
+  // declarations: [HomePageComponent],
+  imports: [CommonModule, RouterModule.forChild(routes)],
 })
-class AppModule {}
+export class HomePageModule {}
