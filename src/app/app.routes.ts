@@ -1,8 +1,17 @@
 import { Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
+import { PlacesComponent } from './pages/places/places.component';
+import { DetailsComponent } from './pages/details/details.component';
+import { BookNowComponent } from './pages/book-now/book-now.component';
+import { LoginComponent } from './pages/authentication/login/login.component';
+import { SignUpComponent } from './pages/authentication/sign-up/sign-up.component';
 
 export const routes: Routes = [
-    { path: '**', component: HomePageComponent},
-    { path: 'signup', component: SignUpPageComponent }
+    { path: '', component: HomePageComponent},
+    { path: 'login', component: LoginComponent},
+    { path: 'signup', component: SignUpComponent},
+    { path: 'places', component: PlacesComponent},
+    { path: 'details', component: DetailsComponent},
+    { path: 'booknow', component: BookNowComponent},
+    { path: '**', redirectTo: '', pathMatch: 'full'}
 ];

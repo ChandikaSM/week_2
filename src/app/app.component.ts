@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import {MatToolbarModule}  from "@angular/material/toolbar";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { RouterOutlet } from '@angular/router';
 import { MatIcon } from "@angular/material/icon";
+import { SignUpComponent } from './pages/authentication/sign-up/sign-up.component';
+import {MatDialog} from "@angular/material/dialog";
+import { LoginComponent } from './pages/authentication/login/login.component';
+
 
 
 @Component({
@@ -20,4 +24,17 @@ MatIcon],
 })
 export class AppComponent {
   title = 'tourist_spot';
+  constructor(private dialog: MatDialog) {}
+
+  openSignupModal(): void {
+    const dialogRef = this.dialog.open(SignUpComponent, {
+      width: '500px'
+    });
+  }
+  openLoginModal(): void {
+    const dialogRef = this.dialog.open(LoginComponent, {
+      width: '500px'
+    });
+  }
+  
 }

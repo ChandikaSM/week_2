@@ -1,0 +1,27 @@
+<div class="login-container">
+    <mat-card class="login-card">
+        <form formGroup="form">
+            <h2>Login</h2>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" matInput formControlName="email" id="email">
+                <div ngIf="signUpForm.get('email').invalid && signUpForm.get('email').touched" class="error-message">
+                  Email is required and must be a valid email address.
+                </div>
+              </div>
+              <div class="field">
+                <label for="password">Password</label>
+                <input type="password" matInput formControlName="password" id="password">
+              </div>
+              <button type="submit" mat-raised-button color="primary" class="submit-button">Signup</button>
+
+              <div class="login-link">
+                <span>Don't have an account?</span>
+                <a mat-button (click)="openSignupModal()">
+                  SIgnup
+                </a>
+              </div>
+
+        </form>
+    </mat-card>
+</div>

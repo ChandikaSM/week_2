@@ -1,0 +1,53 @@
+<div class="signup-container">
+    <mat-card class="signup-card">
+      <form formGroup="signUpForm" (ngSubmit)="onSubmit()">
+        <h2>Signup</h2>
+  
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" matInput formControlName="name" id="name">
+        </div>
+  
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" matInput formControlName="phone" id="phone">
+        </div>
+  
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" matInput formControlName="email" id="email">
+          <div ngIf="signUpForm.get('email').invalid && signUpForm.get('email').touched" class="error-message">
+            Email is required and must be a valid email address.
+          </div>
+        </div>
+  
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" matInput formControlName="password" id="password">
+        </div>
+  
+        <div class="field">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" matInput formControlName="confirm_password" id="confirm_password">
+          <div ngIf="signUpForm.hasError('mismatch') && signUpForm.get('confirm_password').dirty" class="error-message">
+            Passwords do not match.
+          </div>
+        </div>
+  
+        <button type="submit" mat-raised-button color="primary" class="submit-button">Signup</button>
+  
+        <div class="login-link">
+          <span>Already have an account?</span>
+          <a mat-button (click)="openLoginModal()">
+            Login
+          </a>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+  <script type="text/javascript">
+    console.log('hello form submitted');
+
+
+</script>
+  

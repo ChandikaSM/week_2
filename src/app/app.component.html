@@ -6,9 +6,18 @@
 
     <div class="spaceAround"></div>
     <div class="spacingElement">
-      <button mat-button>HOME</button>
-      <button mat-button>PLACES</button>
-      <button mat-button>SIGNUP</button>
+      <a href="/">
+        <button mat-button routerLinkActive="router-link-active">Home</button>
+      </a>
+      <a href="/places">
+        <button mat-button routerLinkActive="router-link-active">Places</button>
+      </a>
+      <button mat-button (click)="openSignupModal()">
+        Signup
+      </button>
+      <button mat-button (click)="openLoginModal()">
+        Login
+      </button>
     </div>
   </mat-toolbar>
 </section>
@@ -22,50 +31,43 @@
       <mat-icon>instagra</mat-icon>
     </span>
   </div>
-  <mat-grid-list cols="3" rowHeight="15vh">
-    <mat-grid-tile cols="1">
-      <div>
-        <h2>Directorate of Tourism</h2>
-        <p class="flexSpan">
-          <span>icon <span> contact</span></span>
-          <span> 5th Floor, IT Bhavan Agartala, Tripura 799006 </span>
-          <span class="flex">
-            <span>icon</span>
-            <span>+91 9233107174</span>
-          </span>
-        </p>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile cols="1">
-      <div>
-        <h2>Directorate of Tourism</h2>
-        <p class="flexSpan">
-          <span>contact <span>contect</span></span>
-          <span> 5th Floor, IT Bhavan Agartala, Tripura 799006 </span>
-          <span class="flex">
-            <span>icon</span>
-            <span>+91 9233107174</span>
-          </span>
-        </p>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile cols="1">
-      <div>
-        <h2>Directorate of Tourism</h2>
-        <p class="flexSpan">
-          <span>contact <span>contect</span></span>
-          <span> 5th Floor, IT Bhavan Agartala, Tripura 799006 </span>
-          <span class="flex">
-            <span>icon</span>
-            <span>+91 9233107174</span>
-          </span>
-        </p>
-      </div>
-    </mat-grid-tile>
+  <div class="grid">
+    <div>
+      <h2>Directorate of Tourism</h2>
+      <p class="flexSpan">
+        <span>icon <span> contact</span></span>
+        <span> 5th Floor, IT Bhavan Agartala, Tripura 799006 </span>
+        <span class="flex">
+          <span>icon</span>
+          <span>+91 9233107174</span>
+        </span>
+      </p>
+    </div>
 
+    <div>
+      <h2>Directorate of Tourism</h2>
+      <p class="flexSpan">
+        <span>icon <span> contact</span></span>
+        <span> 5th Floor, IT Bhavan Agartala, Tripura 799006 </span>
+        <span class="flex">
+          <span>icon</span>
+          <span>+91 9233107174</span>
+        </span>
+      </p>
+    </div>
 
-  
-    
-  </mat-grid-list>
+    <div>
+      <h2>Directorate of Tourism</h2>
+      <p class="flexSpan">
+        <span>icon <span> contact</span></span>
+        <span> 5th Floor, IT Bhavan Agartala, Tripura 799006 </span>
+        <span class="flex">
+          <span>icon</span>
+          <span>+91 9233107174</span>
+        </span>
+      </p>
+    </div>
+
+  </div>
   <span class="lastCopy">Copyright* xLayer Technologies Private Limited 2022</span>
 </footer>

@@ -1,0 +1,47 @@
+.gridDetails{
+    display: flex;
+   
+
+.images {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+    border: 1px solid rgb(0, 0, 0.4);
+    margin: 1rem;
+    
+    .mainImage {
+      img {
+        // margin:  1rem;
+        width: 100%;
+      }
+    }
+    
+    .innerDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+   
+      
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+ 
+
+.detailsHeading {
+    display: block;
+    justify-content: flex-start;
+    text-align: justify;
+    padding: 2rem;
+    flex: 1;
+    p{
+        font-size: 1.5rem;
+        font-weight: 400;
+        // letter-spacing: 1px;
+        line-height: 1.8rem;
+    }
+}}
