@@ -1,1 +1,75 @@
-<p>book-now works!</p>
+<section class="bookNow">
+    <form class="formField">
+        <div class="name">
+            <mat-label>
+                Name:
+            </mat-label>
+            <input mat-input type="text"/>
+        </div>
+
+        <div class="mobile">
+            <mat-label>
+                Mobile:
+            </mat-label>
+            <input mat-input type="number"/>
+        </div>
+
+        <div class="email">
+            <mat-label>
+                Email
+            </mat-label>
+            <input mat-input type="email"/>
+        </div>
+
+        <div class="date">
+            <mat-form-field class="example-full-width">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <div>
+            {{'date'}}
+        </div>
+        <div class="select">
+            select:
+            <div class="space">
+                child
+                <span class="quantity">
+                    
+                    <span class="material-symbols-outlined" id="remove">
+                        remove
+                        </span>
+                    <span>{{childQuantity}}</span>
+                    <span class="material-symbols-outlined" id="add">
+                        add
+                        </span>
+                </span>
+                Adult
+                <span class="quantity">
+                    
+                    <span class="material-symbols-outlined" id="remove" >
+                        remove
+                        </span>
+                    <span>{{adultQuantity}}</span>
+                    <span class="material-symbols-outlined" id="add">
+                        add
+                        </span>
+                </span>
+            </div>
+        </div>
+        <div class="total">
+            total:
+            <span>{{getTotal()}}</span>
+        </div>
+        <div class="pay">pay</div>
+       
+
+        
+    </form>
+</section>

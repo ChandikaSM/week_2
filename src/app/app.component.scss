@@ -6,8 +6,9 @@
 
 .navBar {
   background-color: #f0e9d6;
-  height: 13vh;
-  // padding: 1rem 8rem 1rem 3rem;
+  height: 10vh;
+  overflow-y: hidden;
+  padding: 1rem 4rem 1rem 2.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   // box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
   .spaceAround {
@@ -17,15 +18,22 @@
     padding: 1.5rem;
   }
   img {
+    padding: 1rem 0rem;
     width: 100%;
-    height: 12vh;
+    height: 100px;
   }
   button {
     font-size: 1.3rem;
-    color: #e4938f;
+    color: #8d6260;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
+}
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 1rem;
+  }
+  
 }
 
 footer {

@@ -28,12 +28,12 @@ export class AppComponent {
 
   openSignupModal(): void {
     const dialogRef = this.dialog.open(SignUpComponent, {
-      width: '500px'
+      width: '700px'
     });
   }
   openLoginModal(): void {
     const dialogRef = this.dialog.open(LoginComponent, {
-      width: '500px'
+      width: '600px'
     });
   }
   

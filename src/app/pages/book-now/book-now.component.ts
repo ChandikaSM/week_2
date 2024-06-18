@@ -7,12 +7,17 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import { merge } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, Validators } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+
+
+
+
 
 @Component({
   selector: 'app-book-now',
   standalone: true,
   providers: [provideNativeDateAdapter()],
-  imports: [MatButton, MatDatepickerModule, MatInputModule, MatFormFieldModule],
+  imports: [MatButton, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatIconModule],
   templateUrl: './book-now.component.html',
   styleUrl: './book-now.component.scss'
 })
@@ -43,5 +48,33 @@ export class BookNowComponent {
       this.errorMessage.set('');
     }
   }
+
+  childQuantity: number = 5;
+  adultQuantity: number =3;
+  pricePerTicket:number = 10;
+//  decreaseQuantity(type: 'child' | 'adult')
+//  {
+//   if(type === 'child'){
+//     if(this.childQuantity > 0) {
+//       this.childQuantity --;
+//     } else if (type === 'adult') {
+//       if(this.adultQuantity > 0){
+//         this.adultQuantity--;
+//       }
+//     }
+//   }
+//  }
+
+//  increaseQuantity(type: 'child' | 'adult'){
+//   if(type === 'child'){
+//     this.childQuantity++;
+//   } else if (type === 'adult') {
+//     this.adultQuantity++;
+//   }
+//  }
+
+ getTotal():number {
+  return (this.childQuantity * this.pricePerTicket) + (this.adultQuantity * this.pricePerTicket);
+ }
 
 }

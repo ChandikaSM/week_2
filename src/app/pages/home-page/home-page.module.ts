@@ -11,5 +11,7 @@ export const routes: Routes = [{ path: '', component: HomePageComponent }];
 @NgModule({
   // declarations: [HomePageComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
+
+
 })
 export class HomePageModule {}
