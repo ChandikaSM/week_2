@@ -3,87 +3,72 @@
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-}
-// @media screen and (max-width: 768px) {
-//     .homePage {
-//         overflow-x: hidden;
-//     }
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-// }
-
-.flex {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  .aboutTripura {
-    margin-left: 2rem;
-    padding: 6rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 2rem;
-    // background: yellow;
-    p {
-      text-align: justify;
-      font-size: 1.5rem;
-      // padding: 0 5rem;
-      line-height: 2rem;
-      font-weight: 100;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-   
-    form {
-      // background: yellow;
-      width: 100%;
+    .aboutTripura {
+      margin-left: 2rem;
+      padding: 6rem 1rem;
       display: flex;
-      justify-content: center;
-      .searchSpan {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 2rem;
+      p {
+        text-align: justify;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      form {
+        // background: yellow;
+        width: 100%;
         display: flex;
-        align-items: center;
-      }
-      input[type="search"] {
-        padding:  1.3rem 3.5rem;
-        border: 1px solid #ccc;
-        border-radius: 25px;
-        font-size: 16px;
-        width: 700px;
-        max-width: 100%;
-        box-shadow: none;
-      }
-      .search {
-       position: absolute;
-       padding: 1rem;
-      //  left: 10px;
-      //  top: 100%;
-      //  transform: translate(-30%);
-      // background: yellow;
-       font-size: 2rem;
-       color: #666;
-       cursor: pointer;
+        justify-content: center;
+        .searchSpan {
+          display: flex;
+          align-items: center;
+        }
+        input[type="search"] {
+          padding: 1.3rem 3.5rem;
+          border: 1px solid #ccc;
+          border-radius: 25px;
+          font-size: 16px;
+          width: 700px;
+          max-width: 100%;
+          box-shadow: none;
+        }
+        .search {
+          position: absolute;
+          padding: 1rem;
+          font-size: 2rem;
+          color: #666;
+          cursor: pointer;
+        }
       }
     }
-  }
-  .behindDiv {
-    position: absolute;
-    opacity: 0.4;
-    top: 45rem;
-    right: 0;
-    left: 53rem;
-    // margin: auto;
-    width: 350px;
-  }
-  
-  @media screen and (max-width: 1123px) {
     .behindDiv {
-      top: 77rem;
-      left: 10rem;
-      img {
-        width: 100%;
+      position: absolute;
+      opacity: 0.4;
+      top: 45rem;
+      right: 0;
+      left: 53rem;
+      width: 350px;
+    }
+    @media screen and (max-width: 1123px) {
+      .behindDiv {
+        top: 77rem;
+        left: 10rem;
+        img {
+          width: 100%;
+        }
       }
     }
   }
 }
+
 @media screen and (max-width: 1123px) {
   .flex {
     display: flex;
@@ -182,7 +167,6 @@
 
 @media screen and (max-width: 768px) {
   .districtGrid {
-    // display: inline;
     grid-template-columns: none;
     margin: 0 4rem;
     .card {
@@ -214,15 +198,19 @@
 
 .imgOverlay {
   position: absolute;
-  // margin-left:1rem;
-  // width: 300px;
 }
 
 .explore {
   position: relative;
+  padding: 1rem;
+
   .sideDiv,
   .rightDiv {
     flex: 1;
+    border-radius: 20px;
+  }
+  .sideDiv {
+    border-radius: 25px;
   }
   .box {
     position: absolute;
@@ -232,11 +220,8 @@
     border: 1px solid #000;
   }
   #divOne {
-    // position: relative;
     top: 0;
-    // left: -30px;
-    // top: 50rem;
-    right: 2rem;
+    right: 3rem;
     opacity: 0.8;
   }
   #divTwo {
@@ -261,7 +246,6 @@
 }
 @media screen and (max-width: 768px) {
   .explore {
-    // margin-right: 2rem;
     display: flex;
     flex-direction: column;
     .box {
@@ -281,8 +265,6 @@
   .imgOverlay {
     position: absolute;
     right: 0;
-    // margin-left:8rem;
     width: 500px;
   }
 }
-

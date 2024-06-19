@@ -1,11 +1,12 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardSubtitle, MatCardTitle } from '@angular/material/card';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-places',
   standalone: true,
-  imports: [MatCard, MatCardHeader, MatCardTitle, MatCardSubtitle,MatCardContent, MatCardActions, MatButton],
+  imports: [MatCard, MatCardHeader, MatCardTitle, MatCardSubtitle,MatCardContent, MatCardActions, MatButton, RouterLink],
   templateUrl: './places.component.html',
   styleUrl: './places.component.scss',
 })

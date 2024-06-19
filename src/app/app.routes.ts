@@ -6,6 +6,8 @@ import { BookNowComponent } from './pages/book-now/book-now.component';
 import { LoginComponent } from './pages/authentication/login/login.component';
 import { SignUpComponent } from './pages/authentication/sign-up/sign-up.component';
 import { PlacesListComponent } from './pages/places/places-list/places-list.component';
+import { AdminComponent } from './admin/admin.component';
+import { ManageAdminComponent } from './admin/manage-admin/manage-admin.component';
 
 export const routes: Routes = [
     { path: '', component: HomePageComponent},
@@ -15,5 +17,9 @@ export const routes: Routes = [
     { path: 'details', component: DetailsComponent},
     { path: 'booknow', component: BookNowComponent},
     { path: 'placelist', component: PlacesListComponent},
+    { path: 'admin', component: AdminComponent },
+    { path: 'manage', component: ManageAdminComponent},
     { path: '**', redirectTo: '', pathMatch: 'full'}
+  
+    
 ];

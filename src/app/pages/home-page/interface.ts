@@ -25,9 +25,3 @@ export interface Interface {
   
   
   }
-
-
-  export interface Interface {
-    
-  }
-  

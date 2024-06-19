@@ -1,0 +1,89 @@
+<section class="catePlace">
+    <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened class="sideDrawer">
+            <mat-card class="dashCard">
+
+                <b>
+                    <span class="material-symbols-outlined icon">
+                        dashboard
+                        </span>
+                    <span class="dash">Dashboard</span></b>
+            </mat-card>
+            
+            
+            <mat-card class="dashCard">
+
+                <b>
+                    <span class="material-symbols-outlined icon">
+                        travel_explore
+                        </span>
+                    <span class="dash">Manage Places</span></b>
+            </mat-card>
+            
+        </mat-drawer>
+        <mat-drawer-content>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h2 class="title">
+                                Total Category:
+                            </h2>
+                            <h1>
+                                4
+                            </h1>
+                            <p>
+                                <button [routerLink]="['/category']" routerLinkActive="router-link-active" >
+                                    View
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h2 class="title">
+                                Total Category:
+                            </h2>
+                            <h1>
+                                4
+                            </h1>
+                            <p>
+                                <button [routerLink]="['/category']" routerLinkActive="router-link-active" >
+                                    View
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h2 class="title">
+                                Total Category:
+                            </h2>
+                            <h1>
+                                4
+                            </h1>
+                            <p>
+                                <button [routerLink]="['/category']" routerLinkActive="router-link-active" >
+                                    View
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-drawer-content>
+        <!-- <mat-drawer-content>
+          <mat-card>
+            <mat-form-field appearence="fill">
+               <mat-label>
+                Filter
+               </mat-label>
+            </mat-form-field>
+          </mat-card>
+        </mat-drawer-content> -->
+      </mat-drawer-container>
+</section>

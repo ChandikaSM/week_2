@@ -9,16 +9,17 @@
 
     <div class="spaceAround"></div>
     <div class="spacingElement">
-      <a href="/">
+      <a [routerLink]="['/']" routerLinkActive="router-link-active">
         <button mat-button routerLinkActive="router-link-active">Home</button>
       </a>
-      <a href="/places">
+      <a [routerLink]="['/places']" routerLinkActive = "router-link-active">
         <button mat-button routerLinkActive="router-link-active">Places</button>
       </a>
-      <button mat-button (click)="openSignupModal()">
-        Signup
-      </button>
-      <button mat-button (click)="openLoginModal()">
+      <a [routerLink]="['/signup']" routerLinkActive = "router-link-active">
+        <button mat-button routerLinkActive="router-link-active">Signup</button>
+      </a>
+
+      <button mat-raised-button (click)="openLoginModal($event)">
         Login
       </button>
     </div>

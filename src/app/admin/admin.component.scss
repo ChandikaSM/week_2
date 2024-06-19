@@ -1,0 +1,86 @@
+
+.catePlace{
+    // height: 100vh;
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    .row{
+        display: flex;
+
+        .column{
+            // flex:1;
+            display: flex;
+            .card {
+                // justify-content: center;
+                // align-items: center;
+                width: 100%;
+                background: pink;
+                padding: 1rem;
+                margin: 1rem;
+                .container{
+                    // justify-content: center;
+                    // display: flex;
+                    align-items: center;
+                    // background: red;
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            // display: flex;
+                            // justify-content: center;
+                            // display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                            background: rgb(213, 213, 253);
+                            padding: .6rem;
+                            width: 50%;
+                            font-size: 1.2rem;
+                            border-radius: 10px;
+                            &:hover{
+                                background: rgb(179, 220, 249);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+      
+}
+
+.example-container {
+    width: auto;
+    // height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+       .sideDrawer{
+        // padding-bottom: 1rem;
+        padding: 1rem-;
+       
+        
+        .dashCard {
+            background: rgb(228, 228, 212);
+            padding: 1rem;
+            border-radius: 0px;
+              b{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: .7rem;
+                .icon {
+                    font-size: 2rem;
+                }
+                .dash {
+                    // padding: 1rem;
+                    // justify-content: center;
+                    border-radius: 2px;
+                    font-size: 1.5rem;
+                }
+              }
+           }
+
+       }
+       
+  
+    
+    
+}

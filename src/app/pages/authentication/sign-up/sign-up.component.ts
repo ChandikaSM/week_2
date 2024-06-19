@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { MatCard } from '@angular/material/card';
+import { MatCard, MatCardModule } from '@angular/material/card';
 import { LoginComponent } from '../login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [MatCard],
+  imports: [MatCardModule, MatButtonModule, MatIconModule],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.scss'
 })
