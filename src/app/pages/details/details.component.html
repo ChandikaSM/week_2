@@ -1,5 +1,5 @@
 <section class="gridDetails" *ngIf="items.length > 0">
-    <!-- @for(item of items; track item){ -->
+    @for(item of items; track item){
      
     <div class="images flex">
         <div class="mainImage">
@@ -38,27 +38,27 @@
             </div>
             <div>
                 Wednesday: {{
-                    items[0].visiting_hours.tuesday
+                    items[0].visiting_hours.wednesday
                 }}
             </div>
             <div>
                 Thursday: {{
-                    items[0].visiting_hours.tuesday
+                    items[0].visiting_hours.thursday
                 }}
             </div>
             <div>
                 Friday: {{
-                    items[0].visiting_hours.tuesday
+                    items[0].visiting_hours.friday
                 }}
             </div>
             <div>
                 Saturday: {{
-                    items[0].visiting_hours.tuesday
+                    items[0].visiting_hours.saturday
                 }}
             </div>
             <div>
                    Sunday: {{
-                    items[0].visiting_hours.tuesday
+                    items[0].visiting_hours.sunday
                 }}
             </div>
             
@@ -75,5 +75,5 @@
 
   
   </div> 
-<!-- } -->
+}
 </section>

@@ -10,18 +10,18 @@ export class AdminService {
 
   constructor(private httpClient: HttpClient) {
   }
-    Create(data:any){
-      return this.httpClient.post(this.url, data,{
-        headers: new HttpHeaders().set('Content-Type', "application/json")
-      })
-    }
+    // Create(data:any){
+    //   return this.httpClient.post(this.url, data,{
+    //     headers: new HttpHeaders().set('Content-Type', "application/json")
+    //   })
+    // }
 
-    Update(data:any){
-      return this.httpClient.patch(this.url, data,{
-        headers: new HttpHeaders().set('Content-Type', "application/json")
-      })
-    }
-    getPlaces(){
-      return this.httpClient.get(this.url);
-    }
+    // Update(data:any){
+    //   return this.httpClient.patch(this.url, data,{
+    //     headers: new HttpHeaders().set('Content-Type', "application/json")
+    //   })
+    // }
+    // getPlaces(){
+    //   return this.httpClient.get(this.url);
+    // }
 }

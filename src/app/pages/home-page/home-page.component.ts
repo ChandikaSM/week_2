@@ -24,15 +24,15 @@ export class HomePageComponent {
   }
 
   getTouristPlaces(): void {
-    this.dataService.getData().subscribe(
-      (items: any) => {
-        console.log(items);
-        this.items = items.result;
-      },
-      (error) => {
-        console.error('Error Fetching data:', error);
-      }
-    );
+    // this.dataService.getData().subscribe(
+    //   (items: any) => {
+    //     console.log(items);
+    //     this.items = items.result;
+    //   },
+    //   (error) => {
+    //     console.error('Error Fetching data:', error);
+    //   }
+    // );
   }
 
   test(): void {

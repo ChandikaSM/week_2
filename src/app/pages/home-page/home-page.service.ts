@@ -12,7 +12,7 @@ export class HomePageService {
 
 
   constructor(private http: HttpClient) { }
-  getData(): Observable<Interface[]>{
-    return this.http.get<Interface[]>(this.apiUrl);
-  }
+  // getData(): Observable<Interface[]>{
+  //   return this.http.get<Interface[]>(this.apiUrl);
+  // }
 }

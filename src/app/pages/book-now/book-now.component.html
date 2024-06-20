@@ -1,78 +1,86 @@
 <section class="bookNow">
-    <form class="formField">
-        <div class="name">
-            <mat-label>
-                Name:
-            </mat-label>
-            <input mat-input type="text"/>
-        </div>
+  <div class="formField">
+    <div class="name">
+      <mat-label> Name: </mat-label>
+      <input mat-input type="text" />
+    </div>
 
-        <div class="mobile">
-            <mat-label>
-                Mobile:
-            </mat-label>
-            <input mat-input type="number"/>
-        </div>
+    <div class="mobile">
+      <mat-label> Mobile: </mat-label>
+      <input mat-input type="number" />
+    </div>
 
-        <div class="email">
-            <mat-label>
-                Email
-            </mat-label>
-            <input mat-input type="email"/>
-        </div>
+    <div class="email">
+      <mat-label> Email </mat-label>
+      <input mat-input type="email" />
+    </div>
 
-        <div class="date">
-            <mat-form-field>
-            <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-hint>MM/DD/YYYY</mat-hint>
-            <mat-datepicker-toggle matIconSuffix [for]="picker">
-              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
-            </mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
-        </div>
+    <!-- <div class="date">
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div> -->
 
-        <div>
-            {{'date'}}
-        </div>
-        <div class="select">
-            select:
-            <div class="space">
-                child
-                <span class="quantity">
+    <div>
+      {{ "date" }}
+    </div>
+    <div class="select">
+      select:
+      <div class="space">
+        child
+        <!-- <span class="quantity">
+          <span
+            class="material-symbols-outlined"
+            id="childRemove"
+            (click)="decreaseChildQuantity()"
+          >
+            remove
+          </span>
+          <span>{{ childQuantity }}</span>
+          <span
+            class="material-symbols-outlined"
+            id="childAdd"
+            (click)="increaseChildQuantity()"
+          >
+            add
+          </span>
+        </span> -->
+
+        Adult
+        <!-- <span class="quantity">
                     
-                    <span class="material-symbols-outlined" id="remove">
-                        remove
-                        </span>
-                    <span>{{childQuantity}}</span>
-                    <span class="material-symbols-outlined" id="add">
-                        add
-                        </span>
-                </span>
-                Adult
-                <span class="quantity">
-                    
-                    <span class="material-symbols-outlined" id="remove" >
+                    <span class="material-symbols-outlined" id="adultRemove" (click)="adultQuantity()">
                         remove
                         </span>
                     <span>{{adultQuantity}}</span>
-                    <span class="material-symbols-outlined" id="add">
+                    <span class="material-symbols-outlined" id="adultAdd" (click)="adultQuantity()">
                         add
                         </span>
-                </span>
-            </div>
+                </span> -->
+      </div>
 
-            <hr />
-        </div>
-        <div class="total">
-            total:
-            <span>{{getTotal()}}</span>
-        </div>
-        <hr />
-        <div class="pay">pay</div>
-       
+      <hr />
+    </div>
 
-        
-    </form>
+    <hr />
+    <div class="payButton">
+      <a
+        mat-button
+        [routerLink]="['/status']"
+        routerLinkActive="router-link-active"
+        class="pay"
+      >
+        Pay
+      </a>
+    </div>
+  </div>
 </section>
+<button mat-raised-button (click)="onClick()">
+  <mat-icon>add</mat-icon>
+</button>

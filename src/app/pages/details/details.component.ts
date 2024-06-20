@@ -18,13 +18,13 @@ trackBy(index:number , item:any): number {
 }
 constructor(private dataService: HomePageService){}
 ngOnInit(): void {
-  this.dataService.getData().subscribe((items: any)=>{
-    console.log(items);
-    this.items = items.result;
+  // this.dataService.getData().subscribe((items: any)=>{
+  //   console.log(items);
+  //   this.items = items.result;
 
-  }, (error) => {
-    console.error ('Error Fetching data:', error);
-  });
+  // }, (error) => {
+  //   console.error ('Error Fetching data:', error);
+  // });
 }
 
 hasEntryFee(item: Interface): boolean {

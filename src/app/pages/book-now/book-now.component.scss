@@ -22,8 +22,8 @@
 .bookNow {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 2% auto;
+    padding: 1rem;
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,6 +41,7 @@
       .select {
         display: flex;
         flex-direction: column;
+      
         gap: 12px;
         .mat-form-field {
           width: 100%;
@@ -77,20 +78,28 @@
           color: #5c6ac4; // Example total color
         }
       }
-      
-      .pay {
-        padding: 12px;
-        background-color: #5c6ac4; // Example pay button color
-        color: #fff;
-        text-align: center;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        
-        &:hover {
-          background-color: #4754a0; // Darker shade on hover
+
+      .payButton{
+         display: flex;
+         justify-content: center;
+         .pay {
+          text-decoration: none;
+          width: 50%;
+          padding: 12px;
+          background-color: #5c6ac4; // Example pay button color
+          color: #fff;
+          text-align: center;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          
+          &:hover {
+            background-color: #4754a0; // Darker shade on hover
+          }
         }
       }
+      
+     
     }
 
     .space {
@@ -106,7 +115,10 @@
         span {
           justify-content: center;
           padding: .8rem;
+          cursor: pointer;
+         
         }
+      
 
       }
     }
